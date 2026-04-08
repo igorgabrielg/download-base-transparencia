@@ -1,0 +1,33 @@
+# Python
+backend/venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Environment
+backend/.env
+frontend/.env
+.env.local
+
+# Data
+backend/data/*.csv
+backend/data/*.db-wal
+backend/data/*.db-shm
+backend/data/checkpoints.json
+backend/data/config.json
+backend/logs/*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

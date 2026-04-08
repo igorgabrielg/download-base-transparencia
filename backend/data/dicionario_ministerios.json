@@ -1,0 +1,98 @@
+{
+  "39000": {
+    "nome": "Ministério dos Transportes",
+    "descricao": "Órgão superior da administração pública federal (Ministério dos Transportes) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "52000": {
+    "nome": "Ministério da Defesa",
+    "descricao": "Órgão responsável pela política de defesa nacional, pelo preparo e emprego das Forças Armadas (Marinha, Exército e Aeronáutica) e pela garantia da soberania e integridade do território brasileiro."
+  },
+  "35000": {
+    "nome": "Ministério das Relações Exteriores",
+    "descricao": "Órgão superior da administração pública federal (Ministério das Relações Exteriores) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "26000": {
+    "nome": "Ministério da Educação",
+    "descricao": "Órgão do Poder Executivo Federal responsável pela formulação e execução da política nacional de educação, abrangendo o ensino infantil, fundamental, médio, superior, profissionalizante e tecnológico."
+  },
+  "33000": {
+    "nome": "Ministério da Previdência Social",
+    "descricao": "Órgão superior da administração pública federal (Ministério da Previdência Social) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "81000": {
+    "nome": "Ministério dos Direitos Humanos e Cidadania",
+    "descricao": "Órgão superior da administração pública federal (Ministério dos Direitos Humanos e Cidadania) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "20000": {
+    "nome": "Presidência da República",
+    "descricao": "Órgão superior da administração pública federal (Presidência da República) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "22000": {
+    "nome": "Ministério da Agricultura e Pecuária",
+    "descricao": "Órgão superior da administração pública federal (Ministério da Agricultura e Pecuária) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "44000": {
+    "nome": "Ministério do Meio Ambiente e Mudança do Clima",
+    "descricao": "Órgão superior da administração pública federal (Ministério do Meio Ambiente e Mudança do Clima) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "36000": {
+    "nome": "Ministério da Saúde",
+    "descricao": "Órgão superior da administração pública federal (Ministério da Saúde) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "53000": {
+    "nome": "Ministério da Integração e do Desenvolvimento Regional",
+    "descricao": "Órgão superior da administração pública federal (Ministério da Integração e do Desenvolvimento Regional) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "46000": {
+    "nome": "Ministério da Gestão e da Inovação em Serviços Públicos",
+    "descricao": "Órgão superior da administração pública federal (Ministério da Gestão e da Inovação em Serviços Públicos) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "30000": {
+    "nome": "Ministério da Justiça e Segurança Pública",
+    "descricao": "Órgão responsável pela defesa da ordem jurídica, dos direitos políticos e das garantias constitucionais, além da formulação e execução da política nacional de segurança pública e defesa social."
+  },
+  "41000": {
+    "nome": "Ministério das Comunicações",
+    "descricao": "Órgão encarregado de formular a política nacional de telecomunicações, radiodifusão e serviços postais, buscando a inclusão digital e universalização das comunicações."
+  },
+  "55000": {
+    "nome": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome",
+    "descricao": "Órgão superior da administração pública federal (Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "24000": {
+    "nome": "Ministério da Ciência, Tecnologia e Inovação",
+    "descricao": "Órgão superior da administração pública federal (Ministério da Ciência, Tecnologia e Inovação) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "84000": {
+    "nome": "Ministério dos Povos Indígenas",
+    "descricao": "Órgão superior da administração pública federal (Ministério dos Povos Indígenas) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "25000": {
+    "nome": "Ministério da Fazenda",
+    "descricao": "Órgão superior da administração pública federal (Ministério da Fazenda) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "32000": {
+    "nome": "Ministério de Minas e Energia",
+    "descricao": "Órgão superior da administração pública federal (Ministério de Minas e Energia) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "47000": {
+    "nome": "Ministério do Planejamento e Orçamento",
+    "descricao": "Órgão superior da administração pública federal (Ministério do Planejamento e Orçamento) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "49000": {
+    "nome": "Ministério do Desenvolvimento Agrário e Agricultura Familiar",
+    "descricao": "Órgão superior da administração pública federal (Ministério do Desenvolvimento Agrário e Agricultura Familiar) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "42000": {
+    "nome": "Ministério da Cultura",
+    "descricao": "Órgão superior da administração pública federal (Ministério da Cultura) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "37000": {
+    "nome": "Controladoria-Geral da União",
+    "descricao": "Órgão superior da administração pública federal (Controladoria-Geral da União) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "68000": {
+    "nome": "Ministério de Portos e Aeroportos",
+    "descricao": "Órgão superior da administração pública federal (Ministério de Portos e Aeroportos) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  }
+}

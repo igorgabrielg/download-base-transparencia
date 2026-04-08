@@ -1,0 +1,22 @@
+{
+  "token_1": "",
+  "token_2": "",
+  "token_3": "",
+  "ano_inicio": 2014,
+  "ano_fim": 2026,
+  "mes_inicio": 1,
+  "mes_fim": 12,
+  "max_req_madrugada": 590,
+  "max_req_dia": 390,
+  "max_req_restrita": 170,
+  "velocidade_req_min": 60,
+  "fuso_horario": "America/Sao_Paulo",
+  "tamanho_pagina": 500,
+  "baixar_despesas": true,
+  "baixar_receitas": false,
+  "base_url": "https://api.portaldatransparencia.gov.br/api-de-dados",
+  "diretorio_saida": "data",
+  "formato_nome_arquivo": "por_ano_mes",
+  "modo_escrita": "append",
+  "diretorio_logs": "logs"
+}

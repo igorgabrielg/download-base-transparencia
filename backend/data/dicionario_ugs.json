@@ -1,0 +1,558 @@
+{
+  "393029": {
+    "nome": "SUPERINTENDENCIA REG. NO ESTADO PE - DNIT",
+    "descricao": "Unidade Gestora (UG - SUPERINTENDENCIA REG. NO ESTADO PE - DNIT) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "782802": {
+    "nome": "CENTRO DE INTENDENCIA DA MARINHA EM SALVADOR",
+    "descricao": "Unidade Gestora (UG - CENTRO DE INTENDENCIA DA MARINHA EM SALVADOR) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "240013": {
+    "nome": "DIVISAO DE LOGISTICA E INFRAESTRUTURA - DLI",
+    "descricao": "Unidade Gestora (UG - DIVISAO DE LOGISTICA E INFRAESTRUTURA - DLI) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158470": {
+    "nome": "IFPB - CAMPUS PATOS",
+    "descricao": "Unidade Gestora (UG - IFPB - CAMPUS PATOS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "155001": {
+    "nome": "HOSPITAL DE CLINICAS DE PORTO ALEGRE",
+    "descricao": "Unidade Gestora (UG - HOSPITAL DE CLINICAS DE PORTO ALEGRE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "120628": {
+    "nome": "GRUPAMENTO DE APOIO DE BELEM",
+    "descricao": "Unidade Gestora (UG - GRUPAMENTO DE APOIO DE BELEM) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "510181": {
+    "nome": "SUPERINTENDENCIA REGIONAL SUL",
+    "descricao": "Unidade Gestora (UG - SUPERINTENDENCIA REGIONAL SUL) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158325": {
+    "nome": "INST.FED.DO RS/CAMPUS ERECHIM",
+    "descricao": "Unidade Gestora (UG - INST.FED.DO RS/CAMPUS ERECHIM) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153165": {
+    "nome": "UNIVERSIDADE FEDERAL RURAL DE PERNAMBUCO",
+    "descricao": "Unidade Gestora (UG - UNIVERSIDADE FEDERAL RURAL DE PERNAMBUCO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158516": {
+    "nome": "INST.FED.DE EDUC.,CIENC.E TEC.DE STA.CAT/IFSC",
+    "descricao": "Unidade Gestora (UG - INST.FED.DE EDUC.,CIENC.E TEC.DE STA.CAT/IFSC) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "155007": {
+    "nome": "EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES",
+    "descricao": "Unidade Gestora (UG - EMPRESA BRASILEIRA DE SERVICOS HOSPITALARES) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "167103": {
+    "nome": "50 BATALHAO DE INFANTARIA DE SELVA",
+    "descricao": "Unidade Gestora (UG - 50 BATALHAO DE INFANTARIA DE SELVA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "770000": {
+    "nome": "SECRETARIA-GERAL DA MARINHA",
+    "descricao": "Unidade Gestora (UG - SECRETARIA-GERAL DA MARINHA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158280": {
+    "nome": "IFPB - CAMPUS CAJAZEIRAS",
+    "descricao": "Unidade Gestora (UG - IFPB - CAMPUS CAJAZEIRAS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "810006": {
+    "nome": "SEC.NAC. DE PROMOCAO E DEFESA DOS DIR.HUMANOS",
+    "descricao": "Unidade Gestora (UG - SEC.NAC. DE PROMOCAO E DEFESA DOS DIR.HUMANOS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "115406": {
+    "nome": "EMPRESA BRASIL DE COMUNICACAO S.A",
+    "descricao": "Unidade Gestora (UG - EMPRESA BRASIL DE COMUNICACAO S.A) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "151879": {
+    "nome": "INST.FED.SUL-RIO-GRANDENSE/CAMPUS BAGE",
+    "descricao": "Unidade Gestora (UG - INST.FED.SUL-RIO-GRANDENSE/CAMPUS BAGE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "168005": {
+    "nome": "INDUSTRIA DE MATERIAL BELICO DO BRASIL/FI",
+    "descricao": "Unidade Gestora (UG - INDUSTRIA DE MATERIAL BELICO DO BRASIL/FI) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "130029": {
+    "nome": "SUPERINT.DE AGRICULTURA E PECUARIA - SFA/BA",
+    "descricao": "Unidade Gestora (UG - SUPERINT.DE AGRICULTURA E PECUARIA - SFA/BA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "510180": {
+    "nome": "SUPERINTENDENCIA REGIONAL SUDESTE II",
+    "descricao": "Unidade Gestora (UG - SUPERINTENDENCIA REGIONAL SUDESTE II) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158129": {
+    "nome": "INST FED DE EDUC CIENC E TECNOLOGIA BAIANO",
+    "descricao": "Unidade Gestora (UG - INST FED DE EDUC CIENC E TECNOLOGIA BAIANO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "154047": {
+    "nome": "FUNDACAO UNIVERSIDADE FEDERAL DE PELOTAS",
+    "descricao": "Unidade Gestora (UG - FUNDACAO UNIVERSIDADE FEDERAL DE PELOTAS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "193104": {
+    "nome": "IBAMA - SUPERINTENDENCIA DO CEARA/CE",
+    "descricao": "Unidade Gestora (UG - IBAMA - SUPERINTENDENCIA DO CEARA/CE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "167345": {
+    "nome": "HOSPITAL DE GUARNICAO DE NATAL",
+    "descricao": "Unidade Gestora (UG - HOSPITAL DE GUARNICAO DE NATAL) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158496": {
+    "nome": "INST.FED.MATO GROSSO/CAMPUS CONFRESA",
+    "descricao": "Unidade Gestora (UG - INST.FED.MATO GROSSO/CAMPUS CONFRESA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153034": {
+    "nome": "UNIVERSIDADE FEDERAL RURAL DA AMAZONIA",
+    "descricao": "Unidade Gestora (UG - UNIVERSIDADE FEDERAL RURAL DA AMAZONIA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158149": {
+    "nome": "INST.FED.DE ED.,CIENC.E TEC.DO S.PERNAMBUCANO",
+    "descricao": "Unidade Gestora (UG - INST.FED.DE ED.,CIENC.E TEC.DO S.PERNAMBUCANO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "257005": {
+    "nome": "CENTRO NACIONAL DE PRIMATAS",
+    "descricao": "Unidade Gestora (UG - CENTRO NACIONAL DE PRIMATAS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153114": {
+    "nome": "UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL",
+    "descricao": "Unidade Gestora (UG - UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "195001": {
+    "nome": "CIA DE DES.DOS VALES DO S.FRANC.E DO PARNAIBA",
+    "descricao": "Unidade Gestora (UG - CIA DE DES.DOS VALES DO S.FRANC.E DO PARNAIBA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "253003": {
+    "nome": "AGENCIA NACIONAL DE SAUDE SUPLEMENTAR",
+    "descricao": "Unidade Gestora (UG - AGENCIA NACIONAL DE SAUDE SUPLEMENTAR) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "201063": {
+    "nome": "DIVISAO DE PESSOAL EX-TERRITORIO DE RORAIMA",
+    "descricao": "Unidade Gestora (UG - DIVISAO DE PESSOAL EX-TERRITORIO DE RORAIMA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "200116": {
+    "nome": "SUPERINTENDENCIA DA PRF NO RIO DE JANEIRO",
+    "descricao": "Unidade Gestora (UG - SUPERINTENDENCIA DA PRF NO RIO DE JANEIRO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "513178": {
+    "nome": "FRGPS - SUPERINTENDENCIA REGIONAL SUDESTE I",
+    "descricao": "Unidade Gestora (UG - FRGPS - SUPERINTENDENCIA REGIONAL SUDESTE I) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "366003": {
+    "nome": "GRUPO HOSPITALAR CONCEICAO S.A",
+    "descricao": "Unidade Gestora (UG - GRUPO HOSPITALAR CONCEICAO S.A) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158294": {
+    "nome": "IFMA/CAMPUS IMPERATRIZ",
+    "descricao": "Unidade Gestora (UG - IFMA/CAMPUS IMPERATRIZ) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "200331": {
+    "nome": "FUNDO NACIONAL DE SEGURANCA PUBLICA - FNSP",
+    "descricao": "Unidade responsável pelo gerenciamento descentralizado e aplicação de recursos orçamentários voltados às ações locais de segurança pública e policiamento preventivo/repressivo da Polícia Federal."
+  },
+  "120195": {
+    "nome": "CENTRO DE AQUISICOES ESPECIFICAS",
+    "descricao": "Centro militar focado na execução de compras, contratações e logística de suprimentos de aviação e infraestrutura do Comando da Aeronáutica."
+  },
+  "413004": {
+    "nome": "AGENCIA NACIONAL DE TELECOMUNICACOES-PR",
+    "descricao": "Unidade Gestora (UG - AGENCIA NACIONAL DE TELECOMUNICACOES-PR) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153061": {
+    "nome": "UNIVERSIDADE FEDERAL DE JUIZ DE FORA",
+    "descricao": "Unidade gestora responsável pela execução financeira, acadêmica e administrativa da Universidade Federal de Juiz de Fora (UFJF)."
+  },
+  "155850": {
+    "nome": "INST.FED.DO MS/CAMPUS JARDIM",
+    "descricao": "Unidade Gestora (UG - INST.FED.DO MS/CAMPUS JARDIM) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "155013": {
+    "nome": "HOSPITAL UNIVERSITARIO ONOFRE LOPES",
+    "descricao": "Hospital universitário integrado à rede Ebserh, focado em prestação de assistência médico-hospitalar pública gratuita e apoio ao ensino de saúde."
+  },
+  "153173": {
+    "nome": "FUNDO NACIONAL DE DESENVOLVIMENTO DA EDUCACAO",
+    "descricao": "Fundo Nacional de Desenvolvimento da Educação, responsável pela execução e repasses de programas nacionais voltados ao fomento da educação básica pública."
+  },
+  "154080": {
+    "nome": "UNIVERSIDADE FEDERAL DE RORAIMA",
+    "descricao": "Unidade gestora responsável pela infraestrutura e execução orçamentária do campus e atividades acadêmicas da Universidade Federal de Roraima (UFRR)."
+  },
+  "153079": {
+    "nome": "UNIVERSIDADE FEDERAL DO PARANA",
+    "descricao": "Unidade gestora central da Universidade Federal do Paraná (UFPR), responsável pelas contas, despesas de custeio e investimentos da instituição."
+  },
+  "153045": {
+    "nome": "UNIVERSIDADE FEDERAL DO CEARA",
+    "descricao": "Unidade Gestora (UG - UNIVERSIDADE FEDERAL DO CEARA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "330013": {
+    "nome": "FUNDO NACIONAL DE ASSISTENCIA SOCIAL",
+    "descricao": "Unidade Gestora (UG - FUNDO NACIONAL DE ASSISTENCIA SOCIAL) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "156059": {
+    "nome": "INSTITUTO FEDERAL DA BAHIA-BRUMADO",
+    "descricao": "Unidade Gestora (UG - INSTITUTO FEDERAL DA BAHIA-BRUMADO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "157054": {
+    "nome": "SECRETARIA DE ART. INT. C/ OS SIST. DE ENSINO",
+    "descricao": "Unidade Gestora (UG - SECRETARIA DE ART. INT. C/ OS SIST. DE ENSINO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "150220": {
+    "nome": "HOSPITAL UNIVERSITARIO BETTINA FERRO DE SOUZA",
+    "descricao": "Unidade Gestora (UG - HOSPITAL UNIVERSITARIO BETTINA FERRO DE SOUZA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "160004": {
+    "nome": "59  BATALHAO DE INFANTARIA MOTORIZADO",
+    "descricao": "Unidade Gestora (UG - 59  BATALHAO DE INFANTARIA MOTORIZADO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "364102": {
+    "nome": "CONSELHO NAC DE DESENV CIENT E TECNOLOGICO",
+    "descricao": "Unidade Gestora (UG - CONSELHO NAC DE DESENV CIENT E TECNOLOGICO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "762600": {
+    "nome": "CENTRO DE INSTRUCAO ALMIRANTE ALEXANDRINO",
+    "descricao": "Unidade Gestora (UG - CENTRO DE INSTRUCAO ALMIRANTE ALEXANDRINO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "167118": {
+    "nome": "COMANDO DA 4ª REGIAO MILITAR",
+    "descricao": "Unidade Gestora (UG - COMANDO DA 4ª REGIAO MILITAR) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "194064": {
+    "nome": "COORDENACAO REGIONAL DOURADOS/MS",
+    "descricao": "Unidade Gestora (UG - COORDENACAO REGIONAL DOURADOS/MS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "170159": {
+    "nome": "DELEGACIA DA RFB EM LONDRINA",
+    "descricao": "Unidade Gestora (UG - DELEGACIA DA RFB EM LONDRINA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "154041": {
+    "nome": "FUNDACAO UNIVERSIDADE FEDERAL DO MARANHAO",
+    "descricao": "Unidade Gestora (UG - FUNDACAO UNIVERSIDADE FEDERAL DO MARANHAO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "323031": {
+    "nome": "ESCRITORIO CENTRAL DA ANP",
+    "descricao": "Unidade Gestora (UG - ESCRITORIO CENTRAL DA ANP) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "160186": {
+    "nome": "BASE ADMINISTRATIVA DO QGEX",
+    "descricao": "Unidade Gestora (UG - BASE ADMINISTRATIVA DO QGEX) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "150160": {
+    "nome": "PROGRAMA DE ASSISTENCIA A SAUDE DA UFMS",
+    "descricao": "Unidade Gestora (UG - PROGRAMA DE ASSISTENCIA A SAUDE DA UFMS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "114627": {
+    "nome": "SUPERINTENDENCIA DO IBGE EM GOIAS",
+    "descricao": "Unidade Gestora (UG - SUPERINTENDENCIA DO IBGE EM GOIAS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "170397": {
+    "nome": "FCDF - SECRETARIA DE SAUDE",
+    "descricao": "Unidade Gestora (UG - FCDF - SECRETARIA DE SAUDE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "160259": {
+    "nome": "1 GRUPO DE ARTILHARIA ANTIAEREA",
+    "descricao": "Unidade Gestora (UG - 1 GRUPO DE ARTILHARIA ANTIAEREA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "170495": {
+    "nome": "FCDF - CBMDF - ASSISTENCIA MEDICA",
+    "descricao": "Unidade Gestora (UG - FCDF - CBMDF - ASSISTENCIA MEDICA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "200329": {
+    "nome": "CEF - SENASP/MJ",
+    "descricao": "Unidade Gestora (UG - CEF - SENASP/MJ) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "791181": {
+    "nome": "CENTRO DE INTEND. DA MARINHA EM S.PEDRO DA AL",
+    "descricao": "Unidade Gestora (UG - CENTRO DE INTEND. DA MARINHA EM S.PEDRO DA AL) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "155908": {
+    "nome": "HOSPITAL UNIV. DR. MIGUEL RIET CORREA JR.",
+    "descricao": "Unidade Gestora (UG - HOSPITAL UNIV. DR. MIGUEL RIET CORREA JR.) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158304": {
+    "nome": "IFSULDEMINAS - CAMPUS MACHADO",
+    "descricao": "Unidade Gestora (UG - IFSULDEMINAS - CAMPUS MACHADO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "150230": {
+    "nome": "PRO-REITORIA DE ASSUNTOS ESTUDANTIS - PROAES",
+    "descricao": "Unidade Gestora (UG - PRO-REITORIA DE ASSUNTOS ESTUDANTIS - PROAES) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158313": {
+    "nome": "CAMPUS FORTALEZA/IFCE",
+    "descricao": "Unidade Gestora (UG - CAMPUS FORTALEZA/IFCE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "254447": {
+    "nome": "INST NACIONAL DE SAUDE FERNANDES FIGUEIRA",
+    "descricao": "Unidade Gestora (UG - INST NACIONAL DE SAUDE FERNANDES FIGUEIRA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158127": {
+    "nome": "IFFAR - REITORIA",
+    "descricao": "Unidade Gestora (UG - IFFAR - REITORIA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "240235": {
+    "nome": "EMBAIXADA DO BRASIL EM QUITO",
+    "descricao": "Unidade Gestora (UG - EMBAIXADA DO BRASIL EM QUITO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158302": {
+    "nome": "IF GOIANO - CAMPUS CERES",
+    "descricao": "Unidade Gestora (UG - IF GOIANO - CAMPUS CERES) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "110794": {
+    "nome": "SECRETARIA EXECUTIVA/OPERACAO ACOLHIDA",
+    "descricao": "Unidade Gestora (UG - SECRETARIA EXECUTIVA/OPERACAO ACOLHIDA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "170484": {
+    "nome": "FCDF-PMDF-DEPARTAMENTO DE GESTAO DE PESSOAL",
+    "descricao": "Unidade Gestora (UG - FCDF-PMDF-DEPARTAMENTO DE GESTAO DE PESSOAL) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158132": {
+    "nome": "INST.FED.DE EDUC.,CIENC.E TEC.DO MAT.G.DO SUL",
+    "descricao": "Unidade Gestora (UG - INST.FED.DE EDUC.,CIENC.E TEC.DO MAT.G.DO SUL) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158135": {
+    "nome": "INST.FED.DE EDUC.,CIENC.E TEC.DO PARA",
+    "descricao": "Unidade Gestora (UG - INST.FED.DE EDUC.,CIENC.E TEC.DO PARA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "530029": {
+    "nome": "COORDENACAO-GERAL DE GESTAO DE PESSOAS/MIDR",
+    "descricao": "Unidade Gestora (UG - COORDENACAO-GERAL DE GESTAO DE PESSOAS/MIDR) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "167332": {
+    "nome": "POLICLINICA MILITAR DA PRAIA VERMELHA",
+    "descricao": "Unidade Gestora (UG - POLICLINICA MILITAR DA PRAIA VERMELHA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158494": {
+    "nome": "INST.FED.MATO GROSSO/CAMPUS BELA VISTA",
+    "descricao": "Unidade Gestora (UG - INST.FED.MATO GROSSO/CAMPUS BELA VISTA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158263": {
+    "nome": "INST.FED.DO RS/CAMPUS SERTAO",
+    "descricao": "Unidade Gestora (UG - INST.FED.DO RS/CAMPUS SERTAO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "120006": {
+    "nome": "GRUPAMENTO DE APOIO DE BRASILIA",
+    "descricao": "Unidade Gestora (UG - GRUPAMENTO DE APOIO DE BRASILIA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "393003": {
+    "nome": "DEPART.NAC.INFRA ESTRUTURA TRANSPORTES.",
+    "descricao": "Unidade Gestora (UG - DEPART.NAC.INFRA ESTRUTURA TRANSPORTES.) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153010": {
+    "nome": "CENTRO FED.DE EDUC.TECNOL.CELSO S.DA FONSECA",
+    "descricao": "Unidade Gestora (UG - CENTRO FED.DE EDUC.TECNOL.CELSO S.DA FONSECA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153251": {
+    "nome": "UTFPR - CAMPUS CAMPO MOURAO",
+    "descricao": "Unidade Gestora (UG - UTFPR - CAMPUS CAMPO MOURAO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "160526": {
+    "nome": "3 COMPANHIA DE ENGENHARIA DE COMB. MECANIZADO",
+    "descricao": "Unidade Gestora (UG - 3 COMPANHIA DE ENGENHARIA DE COMB. MECANIZADO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153028": {
+    "nome": "UNIVERSIDADE FEDERAL DE ALFENAS",
+    "descricao": "Unidade Gestora (UG - UNIVERSIDADE FEDERAL DE ALFENAS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "135100": {
+    "nome": "COMPANHIA NACIONAL DE ABASTECIMENTO",
+    "descricao": "Unidade Gestora (UG - COMPANHIA NACIONAL DE ABASTECIMENTO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153056": {
+    "nome": "UNIVERSIDADE FEDERAL FLUMINENSE",
+    "descricao": "Unidade Gestora (UG - UNIVERSIDADE FEDERAL FLUMINENSE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "155015": {
+    "nome": "MATERNIDADE ESCOLA JANUARIO CICCO",
+    "descricao": "Unidade Gestora (UG - MATERNIDADE ESCOLA JANUARIO CICCO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153098": {
+    "nome": "PRO-REITORIA DE POS-GRADUACAO.",
+    "descricao": "Unidade Gestora (UG - PRO-REITORIA DE POS-GRADUACAO.) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "443033": {
+    "nome": "INSTITUTO CHICO MENDES - SEDE",
+    "descricao": "Unidade Gestora (UG - INSTITUTO CHICO MENDES - SEDE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158377": {
+    "nome": "INST.FED.DO NORTE DE MG/CAMPUS SALINAS",
+    "descricao": "Unidade Gestora (UG - INST.FED.DO NORTE DE MG/CAMPUS SALINAS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "160130": {
+    "nome": "36º BATALHAO DE INFANTARIA MECANIZADO",
+    "descricao": "Unidade Gestora (UG - 36º BATALHAO DE INFANTARIA MECANIZADO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "257044": {
+    "nome": "DISTRITO SANIT.ESP.INDIGENA - KAIAPO REDENCAO",
+    "descricao": "Unidade Gestora (UG - DISTRITO SANIT.ESP.INDIGENA - KAIAPO REDENCAO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "120039": {
+    "nome": "GRUPAMENTO DE APOIO DO RIO DE JANEIRO",
+    "descricao": "Unidade Gestora (UG - GRUPAMENTO DE APOIO DO RIO DE JANEIRO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "167217": {
+    "nome": "5 GRUPO DE ARTILHARIA DE CAMPANHA/AP",
+    "descricao": "Unidade Gestora (UG - 5 GRUPO DE ARTILHARIA DE CAMPANHA/AP) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "155895": {
+    "nome": "IFPB - CAMPUS CATOLE DO ROCHA",
+    "descricao": "Unidade Gestora (UG - IFPB - CAMPUS CATOLE DO ROCHA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153032": {
+    "nome": "UNIVERSIDADE FEDERAL DE LAVRAS",
+    "descricao": "Unidade Gestora (UG - UNIVERSIDADE FEDERAL DE LAVRAS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "513181": {
+    "nome": "FRGPS - SUPERINTENDENCIA REGIONAL SUL",
+    "descricao": "Unidade Gestora (UG - FRGPS - SUPERINTENDENCIA REGIONAL SUL) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "513180": {
+    "nome": "FRGPS - SUPERINTENDENCIA REGIONAL SUDESTE II",
+    "descricao": "Unidade Gestora (UG - FRGPS - SUPERINTENDENCIA REGIONAL SUDESTE II) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "343013": {
+    "nome": "SUPERINTENDENCIA DO IPHAN M. GERAIS, IPHAN-MG",
+    "descricao": "Unidade Gestora (UG - SUPERINTENDENCIA DO IPHAN M. GERAIS, IPHAN-MG) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "167140": {
+    "nome": "COMANDO DA 9A.REGIAO MILITAR",
+    "descricao": "Unidade Gestora (UG - COMANDO DA 9A.REGIAO MILITAR) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "170201": {
+    "nome": "DELEGACIA DA RFB EM PORTO VELHO",
+    "descricao": "Unidade Gestora (UG - DELEGACIA DA RFB EM PORTO VELHO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "711000": {
+    "nome": "GABINETE DO COMANDANTE DA MARINHA",
+    "descricao": "Unidade Gestora (UG - GABINETE DO COMANDANTE DA MARINHA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "110404": {
+    "nome": "DEPARTAMENTO DE ADMINISTRACAO INTERNA-MD",
+    "descricao": "Unidade Gestora (UG - DEPARTAMENTO DE ADMINISTRACAO INTERNA-MD) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "167403": {
+    "nome": "6 GRUPO DE ARTILHARIA DE CAMPANHA",
+    "descricao": "Unidade Gestora (UG - 6 GRUPO DE ARTILHARIA DE CAMPANHA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "135457": {
+    "nome": "CONAB SEDE SUREG RIO GRANDE DO NORTE",
+    "descricao": "Unidade Gestora (UG - CONAB SEDE SUREG RIO GRANDE DO NORTE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153063": {
+    "nome": "UNIVERSIDADE FEDERAL DO PARA",
+    "descricao": "Unidade Gestora (UG - UNIVERSIDADE FEDERAL DO PARA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "303001": {
+    "nome": "CONSELHO ADMINISTRATIVO DE DEFESA ECONOMICA",
+    "descricao": "Unidade Gestora (UG - CONSELHO ADMINISTRATIVO DE DEFESA ECONOMICA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158469": {
+    "nome": "IFPB - CAMPUS JOAO PESSOA",
+    "descricao": "Unidade Gestora (UG - IFPB - CAMPUS JOAO PESSOA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158636": {
+    "nome": "INST.FED.RONDONIA/CAMPUS JARU",
+    "descricao": "Unidade Gestora (UG - INST.FED.RONDONIA/CAMPUS JARU) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "711100": {
+    "nome": "CENTRO DE COMUNICACAO ESTRATEGICA DA MARINHA",
+    "descricao": "Unidade Gestora (UG - CENTRO DE COMUNICACAO ESTRATEGICA DA MARINHA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158274": {
+    "nome": "INST.FED. FLUMINENSE/CAMPUS CAMPOS-CENTRO",
+    "descricao": "Unidade Gestora (UG - INST.FED. FLUMINENSE/CAMPUS CAMPOS-CENTRO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "510001": {
+    "nome": "COORD.GERAL DE ORCAMENTO, FINANCAS E CONTAB.",
+    "descricao": "Unidade Gestora (UG - COORD.GERAL DE ORCAMENTO, FINANCAS E CONTAB.) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "370004": {
+    "nome": "COORD-GERAL DE ORCAM.,FINANC. E CONTABILIDADE",
+    "descricao": "Unidade Gestora (UG - COORD-GERAL DE ORCAM.,FINANC. E CONTABILIDADE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "160050": {
+    "nome": "HOSPITAL GERAL DE FORTALEZA",
+    "descricao": "Unidade Gestora (UG - HOSPITAL GERAL DE FORTALEZA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "167070": {
+    "nome": "DEPARTAMENTO-GERAL DO PESSOAL",
+    "descricao": "Unidade Gestora (UG - DEPARTAMENTO-GERAL DO PESSOAL) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "167402": {
+    "nome": "6 BATALHAO DE ENGENHARIA DE COMBATE",
+    "descricao": "Unidade Gestora (UG - 6 BATALHAO DE ENGENHARIA DE COMBATE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "167495": {
+    "nome": "HOSPITAL MILITAR DE AREA DE SAO PAULO",
+    "descricao": "Unidade Gestora (UG - HOSPITAL MILITAR DE AREA DE SAO PAULO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158591": {
+    "nome": "INST. FED. DA BAHIA/CAMPUS SEABRA",
+    "descricao": "Unidade Gestora (UG - INST. FED. DA BAHIA/CAMPUS SEABRA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158134": {
+    "nome": "INST.FED.DE EDUC.,CIENC.E TEC.DE SERGIPE",
+    "descricao": "Unidade Gestora (UG - INST.FED.DE EDUC.,CIENC.E TEC.DE SERGIPE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "200615": {
+    "nome": "DIRETORIA DE GESTAO DE PESSOAS",
+    "descricao": "Unidade Gestora (UG - DIRETORIA DE GESTAO DE PESSOAS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "113217": {
+    "nome": "REPRESENTACAO REGIONAL SAO PAULO-ANAC",
+    "descricao": "Unidade Gestora (UG - REPRESENTACAO REGIONAL SAO PAULO-ANAC) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "120633": {
+    "nome": "GRUPAMENTO DE APOIO DE SAO PAULO",
+    "descricao": "Unidade Gestora (UG - GRUPAMENTO DE APOIO DE SAO PAULO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "130060": {
+    "nome": "SUPERINT.DE AGRICULTURA E PECUARIA - SFA/ES",
+    "descricao": "Unidade Gestora (UG - SUPERINT.DE AGRICULTURA E PECUARIA - SFA/ES) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158956": {
+    "nome": "CAMPUS TIANGUA/IFCE",
+    "descricao": "Unidade Gestora (UG - CAMPUS TIANGUA/IFCE) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "153178": {
+    "nome": "UTFPR - CAMPUS PONTA GROSSA",
+    "descricao": "Unidade Gestora (UG - UTFPR - CAMPUS PONTA GROSSA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158137": {
+    "nome": "INST.FED.DE EDUC.CIENCIA TEC DO SUL DE MINAS",
+    "descricao": "Unidade Gestora (UG - INST.FED.DE EDUC.CIENCIA TEC DO SUL DE MINAS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "158412": {
+    "nome": "INST FED SUDESTE DE MG/CAMPUS RIO POMBA",
+    "descricao": "Unidade Gestora (UG - INST FED SUDESTE DE MG/CAMPUS RIO POMBA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "550006": {
+    "nome": "COORDENACAO-GERAL DE GESTAO DE PESSOAS/MDS",
+    "descricao": "Unidade Gestora (UG - COORDENACAO-GERAL DE GESTAO DE PESSOAS/MDS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "160327": {
+    "nome": "INSTITUTO MILITAR DE ENGENHARIA",
+    "descricao": "Unidade Gestora (UG - INSTITUTO MILITAR DE ENGENHARIA) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "114601": {
+    "nome": "FUNDACAO IBGE-ADMINISTRACAO CENTRAL/RJ",
+    "descricao": "Unidade Gestora (UG - FUNDACAO IBGE-ADMINISTRACAO CENTRAL/RJ) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "130102": {
+    "nome": "LABORATORIO FEDERAL DE DEFESA AGROPECUARIA/SP",
+    "descricao": "Unidade Gestora (UG - LABORATORIO FEDERAL DE DEFESA AGROPECUARIA/SP) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "170217": {
+    "nome": "SUPERINTENDENCIA REGIONAL DA RFB NA 2A RF",
+    "descricao": "Unidade Gestora (UG - SUPERINTENDENCIA REGIONAL DA RFB NA 2A RF) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "370002": {
+    "nome": "COORDENACAO-GERAL DE GESTAO DE PESSOAS",
+    "descricao": "Unidade Gestora (UG - COORDENACAO-GERAL DE GESTAO DE PESSOAS) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "160063": {
+    "nome": "CENTRO DE PAGAMENTO DO EXERCITO",
+    "descricao": "Unidade Gestora (UG - CENTRO DE PAGAMENTO DO EXERCITO) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  },
+  "240283": {
+    "nome": "EMBAIXADA DO BRASIL EM LA PAZ - MOEDA LOCAL",
+    "descricao": "Unidade Gestora (UG - EMBAIXADA DO BRASIL EM LA PAZ - MOEDA LOCAL) responsável por executar os recursos públicos orçamentários autorizados no âmbito de sua atuação regional ou setorial."
+  }
+}

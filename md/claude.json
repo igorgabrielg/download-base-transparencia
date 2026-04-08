@@ -1,0 +1,168 @@
+{
+  "CONSTITUIÇÃO DO PROJETO": {
+    "Nome": "Download base transparencia",
+    "regra_de_ouro": "Execute com autonomia, mas consulte antes de decisões estruturais importantes.",
+    "descricao_executor": "O **Download Base Transparência** é um sistema em Python para download massivo e automatizado de dados abertos do Portal da Transparência do Governo Federal do Brasil. Ele consome as APIs REST de Despesas e Receitas, gerenciando múltiplos tokens de acesso com rotação inteligente e controle rigoroso de rate limit por janela de 60 segundos, garantindo máxima vazão sem violação dos limites da API.
+
+O sistema opera com arquitetura assíncrona (asyncio), alternando automaticamente entre três tokens independentes, cada um com seu próprio contador de requisições. Detecta o fuso horário de Brasília para aplicar os limites corretos (madrugada vs. dia), pagina automaticamente todos os endpoints e persiste os resultados incrementalmente em arquivos CSV organizados por ano e mês."
+  },
+  "Contexto do Projeto": {
+    "descricao": "Problema Central: facilitar o download da base do portal da transparencia. Público-Alvo: estudantes de tcc ou pos. Funcionalidades: Crie um sistema completo em Python para download massivo de dados da API do Portal da Transparência do Governo Federal do Brasil, utilizando múltiplos tokens e controle de rate limit por minuto, com foco em máxima eficiência e sem ultrapassar os limites permitidos pela API.
+Objetivo do sistema:
+O sistema deve fazer download dos dados das APIs de DESPESAS e RECEITAS do Portal da Transparência, salvar os dados em arquivos CSV e controlar automaticamente o uso de três tokens diferentes, alternando entre eles para evitar bloqueio por excesso de requisições.
+Requisitos obrigatórios:
+API utilizada
+Usar a API REST do Portal da Transparência:
+https://api.portaldatransparencia.gov.br/api-de-dados/despesas
+https://api.portaldatransparencia.gov.br/api-de-dados/receitas
+O token deve ser enviado no header:
+chave-api-dados: TOKEN
+Tokens
+O sistema deve usar 3 tokens diferentes, por exemplo:
+TOKENS = [
+\"TOKEN_1\",
+\"TOKEN_2\",
+\"TOKEN_3\"
+]
+O sistema deve rotacionar automaticamente entre os tokens.
+Limites da API (obrigatório respeitar)
+Horário do Brasil:
+00:00 às 06:00 → até 700 requisições por minuto por token
+06:00 às 23:59 → até 400 requisições por minuto por token
+APIs restritas → 180 requisições por minuto por token
+Para segurança, usar valores abaixo do limite:
+Madrugada → usar no máximo 590 requisições por minuto por token
+Dia → usar no máximo 390 requisições por minuto por token
+Restritas → usar no máximo 170 por minuto por token
+O sistema deve detectar automaticamente o horário atual do Brasil.
+Rotação de token
+Cada token deve ter seu próprio contador de requisições por minuto.
+Quando um token atingir o limite configurado:
+→ mudar para o próximo token disponível
+→ se todos atingirem o limite, esperar até virar o minuto
+Nunca ultrapassar o limite.
+Controle de minuto
+O sistema deve controlar requisições por janela de 60 segundos.
+Exemplo:
+iniciar contador
+contar requisições
+quando chegar no limite → trocar token
+quando todos chegarem no limite → esperar até completar 60 segundos
+Paginação
+A API usa paginação.
+O sistema deve:
+loop pagina = 1 até não retornar mais dados
+Parâmetros obrigatórios:
+pagina
+tamanhoPagina (usar o máximo permitido)
+ano
+mes (quando necessário)
+Período de download
+O sistema deve permitir baixar por intervalo de anos, por exemplo:
+ANO_INICIO = 2014
+ANO_FIM = 2026
+Loop:
+for ano in range(...)
+for mes in range(1,13)
+Salvamento em CSV
+Salvar em CSV incremental.
+Formato:
+despesas_2014_01.csv
+despesas_2014_02.csv
+receitas_2014.csv
+Usar pandas.
+Se arquivo existir → append.
+Performance
+Usar:
+requests.Session
+threading ou asyncio (preferencialmente asyncio)
+fila de requisições
+controle central de rate limit
+O sistema deve ser otimizado para download massivo.
+Tratamento de erro
+Se API retornar:
+429 → trocar token
+401 → token inválido → pular
+500 → retry
+timeout → retry
+Estrutura esperada
+main.py
+api_client.py
+rate_limiter.py
+token_manager.py
+csv_writer.py
+config.py
+Configuração
+Criar config com:
+TOKENS
+ANO_INICIO
+ANO_FIM
+MAX_REQ_DAY
+MAX_REQ_NIGHT
+MAX_REQ_RESTRICTED
+BASE_URL
+OUTPUT_DIR
+Fuso horário
+Usar horário oficial do Brasil:
+America/Sao_Paulo
+Segurança
+Nunca perder dados.
+Nunca repetir página.
+Nunca ultrapassar limite.
+Sempre registrar log.
+Logs
+Salvar log:
+logs.txt
+com:
+hora
+token usado
+endpoint
+pagina
+status
+erros
+Resultado esperado
+Sistema capaz de baixar milhões de registros sem bloqueio da API.. Telas: Configuracao de Tokens, Configuracao de Periodo, Configuracao de Rate Limit, Selecao de Endpoints, Configuracao de Saida, Painel de Execucao, Monitor de Tokens, Visualizador de Logs, Progresso de Downloads, Retomada de Download"
+  },
+  "Estrutura de Pastas Padronizada": {
+    "descricao": "O executor deve respeitar rigorosamente esta organização.",
+    "pastas": {
+      "src/": "Código fonte da aplicação.",
+      "docs/": "Documentos gerados pelos agentes (requisitos.md, designer.md, etc.).",
+      "tests/": "Suítes de testes de fumaça (Smoke Tests) e funcionais.",
+      "config/": "Arquivos de configuração de ambiente e banco."
+    }
+  },
+  "Convenções de Código e Ferramentas": {
+    "linguagem_stack": "Frontend: IA decide | Backend: Python (FastAPI)",
+    "banco_de_dados": {
+      "regras": [
+        "IDs obrigatoriamente UUID.",
+        "Tabelas devem conter active (bool).",
+        "Tabelas devem conter createdat (timestamp).",
+        "Tabelas devem conter lastupdate (timestamp auto-update)."
+      ]
+    },
+    "validacao": "Uso mandatório de Zod para todos os schemas de entrada.",
+    "formatacao": "Prettier/ESLint (Apenas para organização, não bloquear commits por avisos estéticos).",
+    "comentarios_ancora": "Respeitar e criar comentários // AIDEV-NOTE: {contexto} em pontos críticos de lógica de negócio."
+  },
+  "O que a IA NUNCA deve fazer (Proibições Absolutas)": {
+    "proibicoes": [
+      "NUNCA realizar commits se os testes falharem.",
+      "NUNCA remover comentários de orientação # AIDEV-NOTE.",
+      "NUNCA expor segredos; usar sempre o arquivo .env."
+    ]
+  },
+  "Protocolo de Transparência (Git)": {
+    "padrao_gitmessage": ".gitmessage",
+    "tipos_commit": {
+      "[AI]": "Novas funcionalidades implementadas conforme o blueprint.",
+      "[AI-minor]": "Para correções técnicas, tipagem ou ajustes de build.",
+      "[AI-review]": "Alterações feitas após auditoria do Agente Ready."
+    }
+  },
+  "Glossário do Domínio": {
+    "Download base transparencia": "Sistema principal descrito neste blueprint.",
+    "Blueprint": "Plano de execução com etapas sequenciais para construção do projeto."
+  }
+}

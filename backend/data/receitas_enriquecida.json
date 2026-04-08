@@ -1,0 +1,90 @@
+{
+  "tipo_dado": "receitas",
+  "total_orcado": 4750000.0,
+  "total_realizado": 4530001.25,
+  "desvio_global": -219998.75,
+  "percentual_realizado_medio_ponderado": 95.36844736842104,
+  "resumo_orgaos": [
+    {
+      "codigo": "26000",
+      "nome": "Ministério da Educação",
+      "total_orcado": 1250000.0,
+      "total_realizado": 1180000.75,
+      "desvio_nominal": -69999.25,
+      "percentual_realizado": 94.40006,
+      "descricao": "Órgão do Poder Executivo Federal responsável pela formulação e execução da política nacional de educação, abrangendo o ensino infantil, fundamental, médio, superior, profissionalizante e tecnológico."
+    },
+    {
+      "codigo": "30000",
+      "nome": "Ministério da Justiça e Segurança Pública",
+      "total_orcado": 1500000.0,
+      "total_realizado": 1250000.5,
+      "desvio_nominal": -249999.5,
+      "percentual_realizado": 83.33336666666666,
+      "descricao": "Órgão responsável pela defesa da ordem jurídica, dos direitos políticos e das garantias constitucionais, além da formulação e execução da política nacional de segurança pública e defesa social."
+    },
+    {
+      "codigo": "52000",
+      "nome": "Ministério da Defesa",
+      "total_orcado": 2000000.0,
+      "total_realizado": 2100000.0,
+      "desvio_nominal": 100000.0,
+      "percentual_realizado": 105.0,
+      "descricao": "Órgão responsável pela política de defesa nacional, pelo preparo e emprego das Forças Armadas (Marinha, Exército e Aeronáutica) e pela garantia da soberania e integridade do território brasileiro."
+    }
+  ],
+  "dados_brutos": [
+    {
+      "codigo_orgao_superior": 26000,
+      "nome_orgao_superior": "Ministério da Educação",
+      "codigo_orgao": 26237,
+      "nome_orgao": "Universidade Federal de Juiz de Fora",
+      "codigo_ug": 153061,
+      "nome_ug": "UNIVERSIDADE FEDERAL DE JUIZ DE FORA",
+      "orcamento_atualizado": 500000.0,
+      "receita_realizada": 480000.75,
+      "ano": 2024,
+      "desvio": -19999.25,
+      "percentual_realizado": 96.00014999999999
+    },
+    {
+      "codigo_orgao_superior": 52000,
+      "nome_orgao_superior": "Ministério da Defesa",
+      "codigo_orgao": 52111,
+      "nome_orgao": "Comando da Aeronáutica",
+      "codigo_ug": 120195,
+      "nome_ug": "CENTRO DE AQUISICOES ESPECIFICAS",
+      "orcamento_atualizado": 2000000.0,
+      "receita_realizada": 2100000.0,
+      "ano": 2024,
+      "desvio": 100000.0,
+      "percentual_realizado": 105.0
+    },
+    {
+      "codigo_orgao_superior": 30000,
+      "nome_orgao_superior": "Ministério da Justiça e Segurança Pública",
+      "codigo_orgao": 30101,
+      "nome_orgao": "Departamento de Polícia Federal",
+      "codigo_ug": 200331,
+      "nome_ug": "SUPERINTENDENCIA REGIONAL DA PF NO PARA",
+      "orcamento_atualizado": 1500000.0,
+      "receita_realizada": 1250000.5,
+      "ano": 2024,
+      "desvio": -249999.5,
+      "percentual_realizado": 83.33336666666666
+    },
+    {
+      "codigo_orgao_superior": 26000,
+      "nome_orgao_superior": "Ministério da Educação",
+      "codigo_orgao": 26443,
+      "nome_orgao": "Empresa Brasileira de Serviços Hospitalares",
+      "codigo_ug": 155013,
+      "nome_ug": "HOSPITAL UNIVERSITARIO ONOFRE LOPES",
+      "orcamento_atualizado": 750000.0,
+      "receita_realizada": 700000.0,
+      "ano": 2025,
+      "desvio": -50000.0,
+      "percentual_realizado": 93.33333333333333
+    }
+  ]
+}
