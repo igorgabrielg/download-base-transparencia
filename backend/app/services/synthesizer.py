@@ -59,9 +59,10 @@ async def run_cognitive_synthesis():
         "Diretrizes obrigatórias:\n"
         "1. Correlacione e cruze os dados: avalie se o volume de despesas e os gargalos identificados no parecer de despesa estão compatíveis e sustentáveis frente à eficiência ou frustração de arrecadação descrita no parecer de receita.\n"
         "2. Identifique gargalos macroeconômicos (ex: se houve frustração de receita em algum ministério/órgão que manteve gastos ou despesas altas).\n"
-        "3. Determine e classifique explicitamente a situação fiscal geral do período analisado em uma das três categorias: 'Positiva', 'Neutra' ou 'Negativa'.\n"
-        "4. Você DEVE incluir na última linha do seu relatório a tag exata: 'Classificacao Fiscal: [Positiva/Neutra/Negativa]'.\n"
-        "5. O relatório deve ser formal, coerente e sem contradições lógicas, formatado em Markdown para fácil leitura."
+        "3. Faça uma análise crítica detalhada sobre as assimetrias orçamentárias do período: explique os motivos estruturais ou constitucionais pelos quais determinados ministérios e órgãos superiores chaves (como Educação, Saúde, Defesa ou outros líderes de gastos nos dados) concentram grandes volumes de recursos, e contextualize o motivo pelo qual certos órgãos/UGs menores operam com orçamento muito baixo ou nulo (ex: natureza regional, atuação descentralizada ou escopo reduzido).\n"
+        "4. Determine e classifique explicitamente a situação fiscal geral do período analisado em uma das três categorias: 'Positiva', 'Neutra' ou 'Negativa'.\n"
+        "5. Você DEVE incluir na última linha do seu relatório a tag exata: 'Classificacao Fiscal: [Positiva/Neutra/Negativa]'.\n"
+        "6. O relatório deve ser formal, coerente e sem contradições lógicas, formatado em Markdown para fácil leitura."
     )
     
     user_prompt = (

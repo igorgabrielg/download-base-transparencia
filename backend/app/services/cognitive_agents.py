@@ -51,16 +51,18 @@ async def call_llm(provider: str, model_name: str, api_key: str, system_prompt: 
         prompt_completo = f"System Instruction:\n{system_prompt}\n\nUser Query:\n{user_prompt}"
         
         # Executa o agy CLI via subprocesso assíncrono do Python
+        # Passamos o prompt via stdin usando --print - para evitar limite de tamanho de argumentos (ARG_MAX)
         # Usamos --dangerously-skip-permissions para evitar interatividade nas permissões
-        cmd = ["agy", "--dangerously-skip-permissions", "-p", prompt_completo]
+        cmd = ["agy", "--dangerously-skip-permissions", "--print", "-"]
         
         try:
             process = await asyncio.create_subprocess_exec(
                 *cmd,
+                stdin=asyncio.subprocess.PIPE,
                 stdout=asyncio.subprocess.PIPE,
                 stderr=asyncio.subprocess.PIPE
             )
-            stdout, stderr = await process.communicate()
+            stdout, stderr = await process.communicate(input=prompt_completo.encode('utf-8'))
             
             if process.returncode != 0:
                 err_msg = stderr.decode(errors="replace").strip()
@@ -100,6 +102,9 @@ async def run_receita_agent(provider: str, model_name: str, api_key: str, data_d
     
     with open(receita_file, "r", encoding="utf-8") as f:
         data = json.load(f)
+    
+    # Remove os dados brutos individuais para não estourar o limite do prompt/argumentos da CLI
+    data.pop("dados_brutos", None)
         
     system_prompt = (
         "Você é um Auditor de IA Especialista em Arrecadação Pública.\n"
@@ -138,6 +143,9 @@ async def run_despesa_agent(provider: str, model_name: str, api_key: str, data_d
     
     with open(despesa_file, "r", encoding="utf-8") as f:
         data = json.load(f)
+        
+    # Remove os dados brutos individuais para não estourar o limite do prompt/argumentos da CLI
+    data.pop("dados_brutos", None)
         
     system_prompt = (
         "Você é um Auditor de IA Especialista em Execução Orçamentária e Despesa.\n"

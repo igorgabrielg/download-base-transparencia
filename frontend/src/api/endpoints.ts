@@ -69,6 +69,6 @@ export const iaApi = {
   analyze: () => api.post<{ message: string }>("/ia/analyze").then((r) => r.data),
   synthesize: () => api.post<{ message: string }>("/ia/synthesize").then((r) => r.data),
   index: () => api.post<{ message: string }>("/ia/index").then((r) => r.data),
-  chat: (pergunta: string) => api.post<ChatResponse>("/ia/chat", { pergunta }).then((r) => r.data),
+  chat: (pergunta: string) => api.post<ChatResponse>("/ia/chat", { pergunta }, { timeout: 60000 }).then((r) => r.data),
   runPipelineCompleto: () => api.post<{ message: string }>("/ia/pipeline-completo").then((r) => r.data),
 };

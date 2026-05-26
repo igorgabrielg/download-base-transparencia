@@ -30,16 +30,22 @@ export function ChatAuditoria() {
   
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  const sugestoes = [
+    { label: "📊 Despesa Geral da União", texto: "Qual foi a Despesa total executada pelo governo no período?" },
+    { label: "🏛️ Participação do MEC (Sucesso)", texto: "Qual foi a participação percentual das despesas liquida do Ministério da Educação?" },
+    { label: "🚀 Ministério Espacial (Erro)", texto: "Qual a despesa total do ministerio espacial da amazonia" },
+    { label: "⚠️ Gargalos & Parecer Fiscal", texto: "Quais foram os principais gargalos e a classificação fiscal do período?" }
+  ];
+
   // Faz scroll automático até o final ao receber ou enviar mensagem
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, chatIA.isPending]);
 
-  const handleSend = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!input.trim() || chatIA.isPending) return;
+  const submitPergunta = (texto: string) => {
+    const userMessageText = texto.trim();
+    if (!userMessageText || chatIA.isPending) return;
 
-    const userMessageText = input.trim();
     setInput("");
 
     const userMsg: Message = {
@@ -75,6 +81,16 @@ export function ChatAuditoria() {
         setMessages((prev) => [...prev, botMsg]);
       },
     });
+  };
+
+  const handleSend = (e: React.FormEvent) => {
+    e.preventDefault();
+    submitPergunta(input);
+  };
+
+  const sendSugestao = (texto: string) => {
+    if (chatIA.isPending) return;
+    submitPergunta(texto);
   };
 
   const toggleContext = (messageId: string, index: number) => {
@@ -240,6 +256,31 @@ export function ChatAuditoria() {
             </div>
           );
         })}
+
+        {/* Painel de Sugestões de Perguntas Rápidas */}
+        {messages.length === 1 && (
+          <div className="max-w-[580px] mr-auto ml-11 p-4 rounded-xl border border-[var(--theme-border)] bg-[var(--theme-surface-1)] shadow-sm space-y-3 animate-fade-in">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-[var(--theme-text-secondary)] flex items-center gap-1.5">
+              <Sparkles size={13} className="text-[var(--theme-warning)]" /> Sugestões Rápidas para Apresentação
+            </h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {sugestoes.map((sug, idx) => (
+                <button
+                  key={idx}
+                  type="button"
+                  onClick={() => sendSugestao(sug.texto)}
+                  disabled={chatIA.isPending}
+                  className="p-3 text-left rounded-lg border border-[var(--theme-border)] bg-[var(--theme-surface-2)]/40 hover:bg-[var(--theme-accent)]/5 hover:border-[var(--theme-accent)]/30 transition-all text-xs font-medium text-[var(--theme-text)] cursor-pointer disabled:opacity-50 flex flex-col justify-between h-[68px]"
+                >
+                  <span className="block text-[11px] font-semibold text-[var(--theme-accent)]">{sug.label}</span>
+                  <span className="block text-[10px] text-[var(--theme-text-secondary)] font-normal truncate w-full mt-1">
+                    "{sug.texto}"
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Indicador de Carregamento */}
         {chatIA.isPending && (

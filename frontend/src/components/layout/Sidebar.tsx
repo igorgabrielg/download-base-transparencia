@@ -57,10 +57,10 @@ function NavItem({ item, onClick }: { item: (typeof configItems)[0]; onClick?: (
       onClick={onClick}
       className={({ isActive }) =>
         clsx(
-          "flex items-center gap-3 px-4 py-2.5 text-sm transition-colors",
+          "flex items-center gap-3 py-2.5 text-sm transition-all border-l-4",
           isActive
-            ? "bg-white/10 text-white font-medium"
-            : "text-white/60 hover:text-white hover:bg-white/5",
+            ? "bg-white/10 text-white font-medium border-[var(--theme-accent)] pl-3"
+            : "text-white/60 hover:text-white hover:bg-white/5 border-transparent pl-[14px]",
         )
       }
     >

@@ -200,88 +200,88 @@ export function Execucao() {
 
   return (
     <div>
-      <h2 className="text-h2 text-[var(--theme-text)] flex items-center gap-3 mb-6">
-        <Play size={24} /> Painel de Execucao
-      </h2>
+      <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
+        <h2 className="text-h2 text-[var(--theme-text)] flex items-center gap-3">
+          <Play size={24} /> Painel de Execução
+        </h2>
+        <div className="flex items-center gap-2 text-xs text-[var(--theme-text-secondary)] bg-[var(--theme-surface-1)] px-3 py-1.5 rounded-full border border-[var(--theme-border)] shadow-sm">
+          <span className={`w-2 h-2 rounded-full ${connected ? "bg-[var(--theme-success)]" : "bg-[var(--theme-error)]"}`} />
+          <span>{connected ? "Servidor Conectado" : "Servidor Desconectado"}</span>
+        </div>
+      </div>
 
-      {/* Action bar */}
-      <div className="card mb-6">
-        <div className="flex flex-wrap items-center gap-3">
-          <button
-            className="btn btn-primary"
-            onClick={handleStart}
-            disabled={!isStopped || start.isPending}
-          >
-            {start.isPending ? <Loader2 size={16} className="animate-spin" /> : <Play size={16} />}
-            Iniciar Download
-          </button>
-          <button
-            className="btn btn-warning"
-            onClick={handlePause}
-            disabled={!isRunning || pause.isPending}
-          >
-            <Pause size={16} /> Pausar
-          </button>
-          <button
-            className="btn btn-success"
-            onClick={handleResume}
-            disabled={!isPaused || resume.isPending}
-          >
-            <RefreshCw size={16} /> Retomar
-          </button>
-          <button
-            className="btn btn-danger"
-            onClick={handleStop}
-            disabled={isStopped || stop.isPending}
-          >
-            <Square size={16} /> Parar Download
-          </button>
+      {/* Painel de Ações Reorganizado */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        {/* Painel de Ingestão de Dados (Download) */}
+        <div className="card flex flex-col justify-between">
+          <div>
+            <h3 className="text-h4 text-[var(--theme-text)] font-bold mb-2">Ingestão de Dados (Download)</h3>
+            <p className="text-xs text-[var(--theme-text-secondary)] mb-4">
+              Baixe as bases de despesas e receitas diretamente da API do Portal da Transparência.
+            </p>
+          </div>
           
-          <button
-            className="btn btn-warning flex items-center gap-2"
-            onClick={handleAnalyzeIA}
-            disabled={!isStopped || analyzeIA.isPending}
-            style={{ backgroundColor: "var(--theme-warning)", color: "#000" }}
-          >
-            {analyzeIA.isPending ? <Loader2 size={16} className="animate-spin" /> : <Cpu size={16} />}
-            Iniciar Analise Cognitiva (IA)
-          </button>
+          <div className="flex flex-wrap items-center gap-3 mt-auto">
+            {isStopped ? (
+              <button
+                className="btn btn-primary w-full sm:w-auto cursor-pointer"
+                onClick={handleStart}
+                disabled={start.isPending}
+              >
+                {start.isPending ? <Loader2 size={16} className="animate-spin" /> : <Play size={16} />}
+                Iniciar Download
+              </button>
+            ) : (
+              <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+                {isRunning && (
+                  <button
+                    className="btn btn-warning cursor-pointer"
+                    onClick={handlePause}
+                    disabled={pause.isPending}
+                  >
+                    <Pause size={16} /> Pausar Download
+                  </button>
+                )}
+                {isPaused && (
+                  <button
+                    className="btn btn-success cursor-pointer"
+                    onClick={handleResume}
+                    disabled={resume.isPending}
+                  >
+                    <RefreshCw size={16} /> Retomar Download
+                  </button>
+                )}
+                <button
+                  className="btn btn-danger cursor-pointer"
+                  onClick={handleStop}
+                  disabled={stop.isPending}
+                >
+                  <Square size={16} /> Parar Download
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
 
-          <button
-            className="btn btn-primary flex items-center gap-2"
-            onClick={handleSynthesizeIA}
-            disabled={!isStopped || synthesizeIA.isPending}
-            style={{ backgroundColor: "#8b5cf6", borderColor: "#8b5cf6", color: "#fff" }}
-          >
-            {synthesizeIA.isPending ? <Loader2 size={16} className="animate-spin" /> : <Cpu size={16} />}
-            Consolidar Relatorio (IA)
-          </button>
-
-          <button
-            className="btn flex items-center gap-2 text-white"
-            onClick={handleIndexIA}
-            disabled={!isStopped || indexIA.isPending}
-            style={{ backgroundColor: "#10b981", borderColor: "#10b981" }}
-          >
-            {indexIA.isPending ? <Loader2 size={16} className="animate-spin" /> : <Cpu size={16} />}
-            Indexar Relatorio (IA)
-          </button>
-
-          <button
-            className="btn flex items-center gap-2 text-white font-semibold cursor-pointer animate-hover-button"
-            onClick={handlePipelineCompletoIA}
-            disabled={!isStopped || pipelineCompletoIA.isPending}
-            style={{ background: "linear-gradient(135deg, #a855f7 0%, #6366f1 100%)", borderColor: "transparent" }}
-          >
-            {pipelineCompletoIA.isPending ? <Loader2 size={16} className="animate-spin" /> : <Cpu size={16} />}
-            Executar Pipeline Completo (Etapas 1-4)
-          </button>
-
-          <div className="ml-auto flex items-center gap-2">
-            <span className={`w-2 h-2 rounded-full ${connected ? "bg-[var(--theme-success)]" : "bg-[var(--theme-error)]"}`} />
-            <span className="text-caption text-[var(--theme-text-secondary)]">
-              {connected ? "Conectado" : "Desconectado"}
-            </span>
+        {/* Painel de Auditoria Cognitiva (IA) */}
+        <div className="card flex flex-col justify-between">
+          <div>
+            <h3 className="text-h4 text-[var(--theme-text)] font-bold mb-2">Auditoria Cognitiva (Pipeline de IA)</h3>
+            <p className="text-xs text-[var(--theme-text-secondary)] mb-4">
+              Dispare de forma sequencial o pipeline completo de IA: análises de receitas/despesas, consolidação do Auditor-Chefe e indexação no ChromaDB.
+            </p>
+          </div>
+          
+          <div className="mt-auto">
+            <button
+              className="btn flex items-center justify-center gap-2 text-white font-semibold cursor-pointer animate-hover-button w-full sm:w-auto"
+              onClick={handlePipelineCompletoIA}
+              disabled={!isStopped || pipelineCompletoIA.isPending}
+              style={{ background: "linear-gradient(135deg, #a855f7 0%, #6366f1 100%)", borderColor: "transparent" }}
+            >
+              {pipelineCompletoIA.isPending ? <Loader2 size={16} className="animate-spin" /> : <Cpu size={16} />}
+              Executar Pipeline Completo (Etapas 1-4)
+            </button>
           </div>
         </div>
       </div>

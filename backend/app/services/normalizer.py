@@ -34,14 +34,19 @@ class Normalizer:
             return 0.0
 
     def extract_ano(self, df: pd.DataFrame, filepath: str = None) -> pd.Series:
-        """Extrai o ano de 4 dígitos a partir de colunas temporais comuns como 'anoMes', 'ano', 'exercicio'
-        ou do próprio nome do arquivo caso não existam no DataFrame.
+        """Extrai o ano de 4 dígitos a partir de colunas temporais comuns como 'anoMes', 'ano', 'exercicio',
+        'Ano e mês do lançamento', 'ANO EXERCÍCIO' ou do próprio nome do arquivo caso não existam no DataFrame.
         """
         # Procuramos colunas candidatas para o tempo
         cols = [c.lower() for c in df.columns]
         
         time_col = None
-        for candidate in ["anomes", "ano_mes", "ano", "exercicio", "exercício"]:
+        candidates = [
+            "anomes", "ano_mes", "ano", "exercicio", "exercício", 
+            "ano e mês do lançamento", "ano e mes do lancamento", "ano e mes do lançamento",
+            "ano/mês", "ano/mes", "ano e mes", "ano exercício", "ano exercicio"
+        ]
+        for candidate in candidates:
             if candidate in cols:
                 time_col = df.columns[cols.index(candidate)]
                 break
@@ -49,10 +54,20 @@ class Normalizer:
         if time_col is not None:
             def parse_val(v):
                 v_str = str(v).strip()
-                # Se for anoMes no formato YYYYMM (ex: "202401" ou 202401) ou YYYY-MM
-                clean_str = re.sub(r"\D", "", v_str) # remove não dígitos
+                # 1. Busca ano de 4 dígitos (ex: 2024 ou 2025) usando regex
+                match = re.search(r"\b(20[0-2][0-9])\b", v_str)
+                if match:
+                    return match.group(1)
+                
+                # 2. Fallback: limpa não dígitos e analisa a string
+                clean_str = re.sub(r"\D", "", v_str)
                 if len(clean_str) >= 4:
-                    return clean_str[:4]
+                    # Se começar com 20, assume-se YYYYMM
+                    if clean_str.startswith("20"):
+                        return clean_str[:4]
+                    # Se terminar com um ano provável da série (2000 a 2029)
+                    elif len(clean_str) >= 6 and clean_str[-4:].startswith("20"):
+                        return clean_str[-4:]
                 return "0000"
             return df[time_col].apply(parse_val)
             
@@ -99,7 +114,16 @@ class Normalizer:
         dfs = []
         for file in files:
             print(f"Normalizando arquivo bruto: {file}")
-            df = pd.read_csv(file)
+            
+            # Leitura resiliente a codificações e delimitadores nacionais comuns
+            try:
+                df = pd.read_csv(file, encoding="utf-8", sep=None, engine="python")
+            except (UnicodeDecodeError, ValueError):
+                try:
+                    df = pd.read_csv(file, encoding="iso-8859-1", sep=None, engine="python")
+                except Exception:
+                    df = pd.read_csv(file, encoding="latin-1", sep=None, engine="python")
+                    
             if df.empty:
                 continue
                 
@@ -112,6 +136,31 @@ class Normalizer:
             
             # 2. Padronização de nomes de colunas para snake_case
             df.columns = [self.to_snake_case(c) for c in df.columns]
+            
+            # 3. Unificação de colunas para compatibilidade de nomes de chaves com o Enricher
+            if prefix == "despesas":
+                # Renomeia valor liquidado para 'valor' (caso seja o CSV manual)
+                for col in ["valor_liquidado_r", "valor_liquidado"]:
+                    if col in df.columns:
+                        df = df.rename(columns={col: "valor"})
+                        break
+                # Renomeia unidades gestoras
+                if "codigo_unidade_gestora" in df.columns:
+                    df = df.rename(columns={"codigo_unidade_gestora": "codigo_ug"})
+                if "nome_unidade_gestora" in df.columns:
+                    df = df.rename(columns={"nome_unidade_gestora": "nome_ug"})
+                    
+            elif prefix == "receitas":
+                # Renomeia receita realizada
+                for col in ["valor_realizado", "receita_realizada"]:
+                    if col in df.columns:
+                        df = df.rename(columns={col: "receita_realizada"})
+                        break
+                # Renomeia orçamento previsto atualizado
+                for col in ["valor_previsto_atualizado", "orcamento_atualizado"]:
+                    if col in df.columns:
+                        df = df.rename(columns={col: "orcamento_atualizado"})
+                        break
             
             dfs.append(df)
             
