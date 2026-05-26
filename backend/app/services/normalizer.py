@@ -4,6 +4,13 @@ from pathlib import Path
 import pandas as pd
 
 class Normalizer:
+    # Todas as normalizações realizadas por esta classe:
+    # - Limpa valores monetários representados como strings e os converte para float (removendo R$, separadores de milhar e tratando vírgula decimal).
+    # - Extrai o ano de 4 dígitos a partir de colunas temporais candidatas (como 'anoMes', 'exercício') ou do nome do arquivo.
+    # - Converte nomes de colunas (CamelCase, espaços) para snake_case limpo, removendo acentos e caracteres especiais.
+    # - Lê de forma resiliente arquivos CSV lidando de forma automática com encodings (UTF-8, ISO-8859-1, Latin-1) e delimitadores nacionais.
+    # - Padroniza nomes de colunas chave para compatibilidade (ex: renomeia 'valor_liquidado_r' para 'valor' e 'codigo_unidade_gestora' para 'codigo_ug').
+
     def __init__(self, data_dir: str = "data"):
         self.data_dir = Path(data_dir)
 
