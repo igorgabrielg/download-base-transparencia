@@ -218,17 +218,18 @@ async def run_vector_indexing():
         )
         
         # 4. Adiciona blocos de texto e gera embeddings localmente
-        ids = [f"chunk_{i}" for i in range(total_chunks)]
-        metadados = [{"index": i, "ano_fim": cfg.get("ano_fim", settings.ano_fim)} for i in range(total_chunks)]
+        await log_to_ws("Vetorizando e inserindo blocos no banco de dados vetorial local de forma incremental...")
         
-        await log_to_ws("Vetorizando e inserindo blocos no banco de dados vetorial local...")
-        
-        # Inserção em lote no ChromaDB
-        collection.add(
-            documents=chunks,
-            metadatas=metadados,
-            ids=ids
-        )
+        # Inserção incremental (de 1 em 1) para evitar crash nativo do ONNXRuntime/ChromaDB no macOS
+        for i in range(total_chunks):
+            collection.add(
+                documents=[chunks[i]],
+                metadatas=[{"index": i, "ano_fim": cfg.get("ano_fim", settings.ano_fim)}],
+                ids=[f"chunk_{i}"]
+            )
+            # Loga progresso a cada 10 blocos ou no final
+            if (i + 1) % 10 == 0 or (i + 1) == total_chunks:
+                await log_to_ws(f"Progresso da vetorização: {i + 1}/{total_chunks} blocos inseridos.")
         
         await log_to_ws(f"Processamento concluído. {total_chunks} vetores de embeddings persistidos no ChromaDB local.")
         await log_to_ws("Indexação Vetorial finalizada com sucesso!", is_success=True)

@@ -13,6 +13,8 @@ import { Logs } from "./pages/Logs";
 import { Progresso } from "./pages/Progresso";
 import { Retomada } from "./pages/Retomada";
 import { ChatAuditoria } from "./pages/ChatAuditoria";
+import { TestesAcuracia } from "./pages/TestesAcuracia";
+import { CalculosPython } from "./pages/CalculosPython";
 
 export function App() {
   return (
@@ -32,6 +34,8 @@ export function App() {
           <Route path="/progresso" element={<Progresso />} />
           <Route path="/retomada" element={<Retomada />} />
           <Route path="/chat" element={<ChatAuditoria />} />
+          <Route path="/testes-acuracia" element={<TestesAcuracia />} />
+          <Route path="/calculos-python" element={<CalculosPython />} />
         </Route>
       </Routes>
     </BrowserRouter>

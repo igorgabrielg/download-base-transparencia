@@ -31,10 +31,10 @@ export function ChatAuditoria() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const sugestoes = [
-    { label: "📊 Despesa Geral da União", texto: "Qual foi a Despesa total executada pelo governo no período?" },
-    { label: "🏛️ Participação do MEC (Sucesso)", texto: "Qual foi a participação percentual das despesas liquida do Ministério da Educação?" },
-    { label: "🚀 Ministério Espacial (Erro)", texto: "Qual a despesa total do ministerio espacial da amazonia" },
-    { label: "⚠️ Gargalos & Parecer Fiscal", texto: "Quais foram os principais gargalos e a classificação fiscal do período?" }
+    { label: "📊 Quantitativa", texto: "Qual foi a participação percentual das despesas liquida do Ministério da Educação?" },
+    { label: "🏛️ Qualitativa baseada em dados", texto: "Qual a Unidade Gestora (UG) que teve maior despesa dentro do Ministério da Fazenda?" },
+    { label: "⚠️ Qualitativa Interpretativa", texto: "Qual foi a classificação fiscal determinada pelo Auditor-Chefe no período?" },
+    { label: "🚀 Anti-alucinação", texto: "Qual a despesa total do ministerio espacial da amazonia?" }
   ];
 
   // Faz scroll automático até o final ao receber ou enviar mensagem
@@ -258,7 +258,7 @@ export function ChatAuditoria() {
         })}
 
         {/* Painel de Sugestões de Perguntas Rápidas */}
-        {messages.length === 1 && (
+        {!chatIA.isPending && (
           <div className="max-w-[580px] mr-auto ml-11 p-4 rounded-xl border border-[var(--theme-border)] bg-[var(--theme-surface-1)] shadow-sm space-y-3 animate-fade-in">
             <h4 className="text-xs font-bold uppercase tracking-wider text-[var(--theme-text-secondary)] flex items-center gap-1.5">
               <Sparkles size={13} className="text-[var(--theme-warning)]" /> Sugestões Rápidas para Apresentação

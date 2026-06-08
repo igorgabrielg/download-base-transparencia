@@ -94,5 +94,57 @@
   "68000": {
     "nome": "Ministério de Portos e Aeroportos",
     "descricao": "Órgão superior da administração pública federal (Ministério de Portos e Aeroportos) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "-1": {
+    "nome": "Sem informação",
+    "descricao": "Órgão superior da administração pública federal (Sem informação) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "63000": {
+    "nome": "Advocacia-Geral da União",
+    "descricao": "Órgão superior da administração pública federal (Advocacia-Geral da União) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "25201": {
+    "nome": "Banco Central do Brasil - Orçamento Fiscal e",
+    "descricao": "Órgão superior da administração pública federal (Banco Central do Brasil - Orçamento Fiscal e) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "54000": {
+    "nome": "Ministério do Turismo",
+    "descricao": "Órgão superior da administração pública federal (Ministério do Turismo) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "51000": {
+    "nome": "Ministério do Esporte",
+    "descricao": "Órgão superior da administração pública federal (Ministério do Esporte) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "56000": {
+    "nome": "Ministério das Cidades",
+    "descricao": "Órgão superior da administração pública federal (Ministério das Cidades) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "28000": {
+    "nome": "Ministério do Desenvolvimento, Indústria, C",
+    "descricao": "Órgão superior da administração pública federal (Ministério do Desenvolvimento, Indústria, C) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "40000": {
+    "nome": "Ministério do Trabalho e Emprego",
+    "descricao": "Órgão superior da administração pública federal (Ministério do Trabalho e Emprego) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "58000": {
+    "nome": "Ministério da Pesca e Aquicultura",
+    "descricao": "Órgão superior da administração pública federal (Ministério da Pesca e Aquicultura) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "67000": {
+    "nome": "Ministério da Igualdade Racial",
+    "descricao": "Órgão superior da administração pública federal (Ministério da Igualdade Racial) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "65000": {
+    "nome": "Ministério das Mulheres",
+    "descricao": "Órgão superior da administração pública federal (Ministério das Mulheres) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "69000": {
+    "nome": "Ministério do Empreendedorismo, da Microempr",
+    "descricao": "Órgão superior da administração pública federal (Ministério do Empreendedorismo, da Microempr) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
+  },
+  "57000": {
+    "nome": "Ministério das Mulheres, Igualdade Racial, d",
+    "descricao": "Órgão superior da administração pública federal (Ministério das Mulheres, Igualdade Racial, d) responsável pela coordenação, execução e planejamento de políticas públicas em seu setor de competência."
   }
 }

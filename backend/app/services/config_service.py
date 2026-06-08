@@ -6,7 +6,14 @@ from app.config import settings
 
 logger = logging.getLogger(__name__)
 
-CONFIG_FILE = Path(settings.diretorio_saida) / "config.json"
+def get_config_file_path() -> Path:
+    path = Path(settings.diretorio_saida) / "config.json"
+    if path.exists():
+        return path
+    path_alt = Path("backend/data/config.json")
+    if path_alt.exists():
+        return path_alt
+    return path
 
 
 def _default_config() -> dict:
@@ -39,9 +46,10 @@ def _default_config() -> dict:
 
 
 def load_config() -> dict:
-    if CONFIG_FILE.exists():
+    config_file = get_config_file_path()
+    if config_file.exists():
         try:
-            return json.loads(CONFIG_FILE.read_text())
+            return json.loads(config_file.read_text())
         except (json.JSONDecodeError, OSError):
             logger.warning("Config corrompida, usando defaults")
     return _default_config()
@@ -50,9 +58,10 @@ def load_config() -> dict:
 def save_config(config: dict) -> dict:
     current = load_config()
     current.update(config)
-    CONFIG_FILE.parent.mkdir(parents=True, exist_ok=True)
-    CONFIG_FILE.write_text(json.dumps(current, indent=2))
-    logger.info("Config salva em %s", CONFIG_FILE)
+    config_file = get_config_file_path()
+    config_file.parent.mkdir(parents=True, exist_ok=True)
+    config_file.write_text(json.dumps(current, indent=2))
+    logger.info("Config salva em %s", config_file)
     return current
 
 

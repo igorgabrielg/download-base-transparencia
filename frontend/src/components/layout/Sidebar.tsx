@@ -16,6 +16,7 @@ import {
   X,
   Cpu,
   MessageSquare,
+  CheckCircle,
 } from "lucide-react";
 import { clsx } from "clsx";
 
@@ -39,9 +40,14 @@ const operationItems = [
   { label: "Progresso", path: "/progresso", icon: BarChart3 },
   { label: "Execucao", path: "/execucao", icon: Play },
   { label: "Monitor Tokens", path: "/monitor/tokens", icon: MonitorDot },
-  { label: "Logs", path: "/logs", icon: FileText },
   { label: "Retomada", path: "/retomada", icon: RotateCcw },
   { label: "Chat Auditoria", path: "/chat", icon: MessageSquare },
+  { label: "Testes Acurácia", path: "/testes-acuracia", icon: CheckCircle },
+];
+
+const logItems = [
+  { label: "Logs", path: "/logs", icon: FileText },
+  { label: "Cálculos Python", path: "/calculos-python", icon: Cpu },
 ];
 
 const themeOptions = [
@@ -102,6 +108,15 @@ export function Sidebar({ open, onClose }: Props) {
           </span>
         </div>
         {operationItems.map((item) => (
+          <NavItem key={item.path} item={item} onClick={onClose} />
+        ))}
+
+        <div className="px-4 py-2 mt-2">
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-white/40">
+            Log e calculos
+          </span>
+        </div>
+        {logItems.map((item) => (
           <NavItem key={item.path} item={item} onClick={onClose} />
         ))}
 

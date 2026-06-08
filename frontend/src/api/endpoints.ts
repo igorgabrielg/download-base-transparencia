@@ -71,4 +71,6 @@ export const iaApi = {
   index: () => api.post<{ message: string }>("/ia/index").then((r) => r.data),
   chat: (pergunta: string) => api.post<ChatResponse>("/ia/chat", { pergunta }, { timeout: 60000 }).then((r) => r.data),
   runPipelineCompleto: () => api.post<{ message: string }>("/ia/pipeline-completo").then((r) => r.data),
+  calculosPython: () => api.get<any[]>("/ia/testes-acuracia/calculos-python", { timeout: 180000 }).then((r) => r.data),
+  processarCalculosPython: () => api.post<any[]>("/ia/testes-acuracia/calculos-python/processar", null, { timeout: 180000 }).then((r) => r.data),
 };
